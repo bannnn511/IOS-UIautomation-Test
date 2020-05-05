@@ -14,6 +14,7 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Volleyball?"
         installWebView()
         
         guard let url = URL(string: "https://en.wikipedia.org/wiki/Volleyball") else { return }

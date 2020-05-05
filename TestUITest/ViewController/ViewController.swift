@@ -77,7 +77,7 @@ extension ViewController {
         userNameTf.layer.cornerRadius = 4
         userNameTf.layer.borderWidth = 1
         userNameTf.placeholder = "UserName"
-        userNameTf.text = "Khai2504"
+//        userNameTf.text = "Khai2504"
         
         userNameTf.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-64)
@@ -92,7 +92,7 @@ extension ViewController {
         passwordTf.layer.cornerRadius = 4
         passwordTf.layer.borderWidth = 1
         passwordTf.placeholder = "Password"
-        passwordTf.text = "123"
+//        passwordTf.text = "123"
         
         passwordTf.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-64)

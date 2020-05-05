@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 class HomeVC: UIViewController {
-    
+    static var identifier = "HomeVC"
     var introLb = UILabel()
     var moreInfoBtn = UIButton()
     var tableView = UITableView()
@@ -19,6 +19,8 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.accessibilityIdentifier = "HomeVC"
+     
         setUpUI()
     }
 
@@ -26,6 +28,7 @@ class HomeVC: UIViewController {
 
 extension HomeVC {
     func setUpUI() {
+        navigationItem.title = "Test"
         view.backgroundColor = .white
         
         view.addSubview(introLb)
