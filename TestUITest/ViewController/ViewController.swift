@@ -74,9 +74,11 @@ extension ViewController {
 //        userNameTf.layer.shadowOpacity = 0.7
         
         userNameTf.borderStyle = .line
-        userNameTf.layer.cornerRadius = 10
+        userNameTf.layer.cornerRadius = 4
         userNameTf.layer.borderWidth = 1
         userNameTf.placeholder = "UserName"
+        userNameTf.text = "Khai2504"
+        
         userNameTf.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-64)
             make.left.equalToSuperview().offset(64)
@@ -85,8 +87,13 @@ extension ViewController {
         }
         
         view.addSubview(passwordTf)
+        passwordTf.clipsToBounds = true
         passwordTf.borderStyle = .line
+        passwordTf.layer.cornerRadius = 4
+        passwordTf.layer.borderWidth = 1
         passwordTf.placeholder = "Password"
+        passwordTf.text = "123"
+        
         passwordTf.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-64)
             make.left.equalToSuperview().offset(64)
