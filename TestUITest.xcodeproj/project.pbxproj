@@ -8,19 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0442B0AA2419E5A000E2374F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442B0A92419E5A000E2374F /* SceneDelegate.swift */; };
-		0442B0B02419EA5800E2374F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442B0AF2419EA5800E2374F /* HomeVC.swift */; };
-		0442B0B12419EA5800E2374F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442B0AF2419EA5800E2374F /* HomeVC.swift */; };
-		0442B0B22419EA5800E2374F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442B0AF2419EA5800E2374F /* HomeVC.swift */; };
 		044584222419DB7A003ACD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044584212419DB7A003ACD4B /* AppDelegate.swift */; };
 		044584262419DB7A003ACD4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044584252419DB7A003ACD4B /* ViewController.swift */; };
 		044584292419DB7A003ACD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044584272419DB7A003ACD4B /* Main.storyboard */; };
 		0445842B2419DB7C003ACD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445842A2419DB7C003ACD4B /* Assets.xcassets */; };
 		0445842E2419DB7C003ACD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445842C2419DB7C003ACD4B /* LaunchScreen.storyboard */; };
 		044584442419DB7D003ACD4B /* TestUITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044584432419DB7D003ACD4B /* TestUITestUITests.swift */; };
-		04F03A30241B682100BF6810 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F03A2F241B682100BF6810 /* HomeCell.swift */; };
-		04F03A31241B682100BF6810 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F03A2F241B682100BF6810 /* HomeCell.swift */; };
-		04F03A32241B682100BF6810 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F03A2F241B682100BF6810 /* HomeCell.swift */; };
+		04B44E1A24613EDA007AA2A0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E1924613EDA007AA2A0 /* HomeVC.swift */; };
+		04B44E1B24613EDA007AA2A0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E1924613EDA007AA2A0 /* HomeVC.swift */; };
+		04B44E1C24613EDA007AA2A0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E1924613EDA007AA2A0 /* HomeVC.swift */; };
+		04B44E1E2461451A007AA2A0 /* HomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E1D2461451A007AA2A0 /* HomeListCell.swift */; };
+		04B44E1F2461451A007AA2A0 /* HomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E1D2461451A007AA2A0 /* HomeListCell.swift */; };
+		04B44E202461451A007AA2A0 /* HomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E1D2461451A007AA2A0 /* HomeListCell.swift */; };
+		04B44E2724614C00007AA2A0 /* ManageTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E2624614C00007AA2A0 /* ManageTeamVC.swift */; };
+		04B44E2824614C00007AA2A0 /* ManageTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E2624614C00007AA2A0 /* ManageTeamVC.swift */; };
+		04B44E2924614C00007AA2A0 /* ManageTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E2624614C00007AA2A0 /* ManageTeamVC.swift */; };
 		0D56554130A952697E96ADBB /* Pods_TestUITestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE09F84DC992C2496149014C /* Pods_TestUITestTests.framework */; };
+		180E66B524615E4F0002430E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B424615E4F0002430E /* ScheduleViewController.swift */; };
+		180E66B624615E4F0002430E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B424615E4F0002430E /* ScheduleViewController.swift */; };
+		180E66B724615E4F0002430E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B424615E4F0002430E /* ScheduleViewController.swift */; };
+		180E66B924615F970002430E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B824615F970002430E /* WebViewController.swift */; };
+		180E66BA24615F970002430E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B824615F970002430E /* WebViewController.swift */; };
+		180E66BB24615F970002430E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B824615F970002430E /* WebViewController.swift */; };
 		E30F4DD65D32D37C432402F8 /* Pods_TestUITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DB996EE5AAF97558B59E9F /* Pods_TestUITest.framework */; };
 		FE2C4B85191DF9CAE2E6FFE1 /* Pods_TestUITest_TestUITestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F805A3783EAD04DA5088D8FF /* Pods_TestUITest_TestUITestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +54,6 @@
 /* Begin PBXFileReference section */
 		011D3392C468107A7F9E541A /* Pods-TestUITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITest.release.xcconfig"; path = "Target Support Files/Pods-TestUITest/Pods-TestUITest.release.xcconfig"; sourceTree = "<group>"; };
 		0442B0A92419E5A000E2374F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0442B0AF2419EA5800E2374F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0445841E2419DB7A003ACD4B /* TestUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044584212419DB7A003ACD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044584252419DB7A003ACD4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +65,11 @@
 		0445843F2419DB7D003ACD4B /* TestUITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044584432419DB7D003ACD4B /* TestUITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITestUITests.swift; sourceTree = "<group>"; };
 		044584452419DB7D003ACD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04F03A2F241B682100BF6810 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		04B44E1924613EDA007AA2A0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		04B44E1D2461451A007AA2A0 /* HomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCell.swift; sourceTree = "<group>"; };
+		04B44E2624614C00007AA2A0 /* ManageTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTeamVC.swift; sourceTree = "<group>"; };
+		180E66B424615E4F0002430E /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		180E66B824615F970002430E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		2F13289F76BCE00191B23FF9 /* Pods-TestUITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITest.debug.xcconfig"; path = "Target Support Files/Pods-TestUITest/Pods-TestUITest.debug.xcconfig"; sourceTree = "<group>"; };
 		55810C29DF5A004F171EEBB1 /* Pods-TestUITestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITestTests.debug.xcconfig"; path = "Target Support Files/Pods-TestUITestTests/Pods-TestUITestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F9BD388073DDEA27BE5DF2D /* Pods-TestUITest-TestUITestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITest-TestUITestUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestUITest-TestUITestUITests/Pods-TestUITest-TestUITestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,15 +132,13 @@
 		044584202419DB7A003ACD4B /* TestUITest */ = {
 			isa = PBXGroup;
 			children = (
+				04B44E1824613E8A007AA2A0 /* ViewController */,
 				044584212419DB7A003ACD4B /* AppDelegate.swift */,
-				044584252419DB7A003ACD4B /* ViewController.swift */,
 				0442B0A92419E5A000E2374F /* SceneDelegate.swift */,
 				044584272419DB7A003ACD4B /* Main.storyboard */,
 				0445842A2419DB7C003ACD4B /* Assets.xcassets */,
 				0445842C2419DB7C003ACD4B /* LaunchScreen.storyboard */,
 				0445842F2419DB7C003ACD4B /* Info.plist */,
-				0442B0AF2419EA5800E2374F /* HomeVC.swift */,
-				04F03A2F241B682100BF6810 /* HomeCell.swift */,
 			);
 			path = TestUITest;
 			sourceTree = "<group>";
@@ -140,6 +150,27 @@
 				044584452419DB7D003ACD4B /* Info.plist */,
 			);
 			path = TestUITestUITests;
+			sourceTree = "<group>";
+		};
+		04B44E1824613E8A007AA2A0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04B44E2124614986007AA2A0 /* Home */,
+				044584252419DB7A003ACD4B /* ViewController.swift */,
+				04B44E2624614C00007AA2A0 /* ManageTeamVC.swift */,
+				180E66B424615E4F0002430E /* ScheduleViewController.swift */,
+				180E66B824615F970002430E /* WebViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04B44E2124614986007AA2A0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04B44E1D2461451A007AA2A0 /* HomeListCell.swift */,
+				04B44E1924613EDA007AA2A0 /* HomeVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		7533142207C99BB634074E13 /* Frameworks */ = {
@@ -241,6 +272,7 @@
 					};
 					044584332419DB7D003ACD4B = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 						TestTargetID = 0445841D2419DB7A003ACD4B;
 					};
 					0445843E2419DB7D003ACD4B = {
@@ -405,10 +437,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				044584262419DB7A003ACD4B /* ViewController.swift in Sources */,
-				0442B0B02419EA5800E2374F /* HomeVC.swift in Sources */,
+				04B44E1E2461451A007AA2A0 /* HomeListCell.swift in Sources */,
+				04B44E2724614C00007AA2A0 /* ManageTeamVC.swift in Sources */,
+				04B44E1A24613EDA007AA2A0 /* HomeVC.swift in Sources */,
 				044584222419DB7A003ACD4B /* AppDelegate.swift in Sources */,
+				180E66B524615E4F0002430E /* ScheduleViewController.swift in Sources */,
 				0442B0AA2419E5A000E2374F /* SceneDelegate.swift in Sources */,
-				04F03A30241B682100BF6810 /* HomeCell.swift in Sources */,
+				180E66B924615F970002430E /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,8 +451,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F03A31241B682100BF6810 /* HomeCell.swift in Sources */,
-				0442B0B12419EA5800E2374F /* HomeVC.swift in Sources */,
+				04B44E1F2461451A007AA2A0 /* HomeListCell.swift in Sources */,
+				04B44E1B24613EDA007AA2A0 /* HomeVC.swift in Sources */,
+				04B44E2824614C00007AA2A0 /* ManageTeamVC.swift in Sources */,
+				180E66BA24615F970002430E /* WebViewController.swift in Sources */,
+				180E66B624615E4F0002430E /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,9 +463,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180E66B724615E4F0002430E /* ScheduleViewController.swift in Sources */,
+				180E66BB24615F970002430E /* WebViewController.swift in Sources */,
 				044584442419DB7D003ACD4B /* TestUITestUITests.swift in Sources */,
-				04F03A32241B682100BF6810 /* HomeCell.swift in Sources */,
-				0442B0B22419EA5800E2374F /* HomeVC.swift in Sources */,
+				04B44E1C24613EDA007AA2A0 /* HomeVC.swift in Sources */,
+				04B44E2924614C00007AA2A0 /* ManageTeamVC.swift in Sources */,
+				04B44E202461451A007AA2A0 /* HomeListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +667,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestUITestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -636,6 +678,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = user.TestUITestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestUITest.app/TestUITest";
@@ -648,6 +691,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestUITestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
