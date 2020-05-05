@@ -45,7 +45,7 @@ extension HomeVC {
         view.addSubview(moreInfoBtn)
         moreInfoBtn.setTitleColor(.systemBlue , for: .normal)
         moreInfoBtn.setTitle("More info", for: .normal)
-        
+        moreInfoBtn.addTarget(self, action: #selector(moreInfoOnClick(_:)), for: .touchUpInside)
         moreInfoBtn.snp.makeConstraints { make in
             make.left.right.equalTo(introLb)
             make.height.equalTo(30)
@@ -62,6 +62,13 @@ extension HomeVC {
             make.right.left.equalToSuperview()
             make.height.equalToSuperview().dividedBy(3)
         }
+    }
+}
+
+extension HomeVC {
+    @objc final private func moreInfoOnClick(_ sender: UIButton) {
+        let view = WebViewController()
+        navigationController?.pushViewController(view, animated: true)
     }
 }
 
@@ -91,6 +98,9 @@ extension HomeVC: UITableViewDelegate {
             self.navigationController?.pushViewController(controller, animated: true)
         case 1:
             return
+        case 2:
+            let controller = ScheduleViewController()
+            self.navigationController?.pushViewController(controller, animated: true)
         default:
             return
         }

@@ -24,6 +24,12 @@
 		04B44E2824614C00007AA2A0 /* ManageTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E2624614C00007AA2A0 /* ManageTeamVC.swift */; };
 		04B44E2924614C00007AA2A0 /* ManageTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B44E2624614C00007AA2A0 /* ManageTeamVC.swift */; };
 		0D56554130A952697E96ADBB /* Pods_TestUITestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE09F84DC992C2496149014C /* Pods_TestUITestTests.framework */; };
+		180E66B524615E4F0002430E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B424615E4F0002430E /* ScheduleViewController.swift */; };
+		180E66B624615E4F0002430E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B424615E4F0002430E /* ScheduleViewController.swift */; };
+		180E66B724615E4F0002430E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B424615E4F0002430E /* ScheduleViewController.swift */; };
+		180E66B924615F970002430E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B824615F970002430E /* WebViewController.swift */; };
+		180E66BA24615F970002430E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B824615F970002430E /* WebViewController.swift */; };
+		180E66BB24615F970002430E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E66B824615F970002430E /* WebViewController.swift */; };
 		E30F4DD65D32D37C432402F8 /* Pods_TestUITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DB996EE5AAF97558B59E9F /* Pods_TestUITest.framework */; };
 		FE2C4B85191DF9CAE2E6FFE1 /* Pods_TestUITest_TestUITestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F805A3783EAD04DA5088D8FF /* Pods_TestUITest_TestUITestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +68,8 @@
 		04B44E1924613EDA007AA2A0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		04B44E1D2461451A007AA2A0 /* HomeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCell.swift; sourceTree = "<group>"; };
 		04B44E2624614C00007AA2A0 /* ManageTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTeamVC.swift; sourceTree = "<group>"; };
+		180E66B424615E4F0002430E /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		180E66B824615F970002430E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		2F13289F76BCE00191B23FF9 /* Pods-TestUITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITest.debug.xcconfig"; path = "Target Support Files/Pods-TestUITest/Pods-TestUITest.debug.xcconfig"; sourceTree = "<group>"; };
 		55810C29DF5A004F171EEBB1 /* Pods-TestUITestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITestTests.debug.xcconfig"; path = "Target Support Files/Pods-TestUITestTests/Pods-TestUITestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F9BD388073DDEA27BE5DF2D /* Pods-TestUITest-TestUITestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITest-TestUITestUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestUITest-TestUITestUITests/Pods-TestUITest-TestUITestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +158,8 @@
 				04B44E2124614986007AA2A0 /* Home */,
 				044584252419DB7A003ACD4B /* ViewController.swift */,
 				04B44E2624614C00007AA2A0 /* ManageTeamVC.swift */,
+				180E66B424615E4F0002430E /* ScheduleViewController.swift */,
+				180E66B824615F970002430E /* WebViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -431,7 +441,9 @@
 				04B44E2724614C00007AA2A0 /* ManageTeamVC.swift in Sources */,
 				04B44E1A24613EDA007AA2A0 /* HomeVC.swift in Sources */,
 				044584222419DB7A003ACD4B /* AppDelegate.swift in Sources */,
+				180E66B524615E4F0002430E /* ScheduleViewController.swift in Sources */,
 				0442B0AA2419E5A000E2374F /* SceneDelegate.swift in Sources */,
+				180E66B924615F970002430E /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +454,8 @@
 				04B44E1F2461451A007AA2A0 /* HomeListCell.swift in Sources */,
 				04B44E1B24613EDA007AA2A0 /* HomeVC.swift in Sources */,
 				04B44E2824614C00007AA2A0 /* ManageTeamVC.swift in Sources */,
+				180E66BA24615F970002430E /* WebViewController.swift in Sources */,
+				180E66B624615E4F0002430E /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +463,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180E66B724615E4F0002430E /* ScheduleViewController.swift in Sources */,
+				180E66BB24615F970002430E /* WebViewController.swift in Sources */,
 				044584442419DB7D003ACD4B /* TestUITestUITests.swift in Sources */,
 				04B44E1C24613EDA007AA2A0 /* HomeVC.swift in Sources */,
 				04B44E2924614C00007AA2A0 /* ManageTeamVC.swift in Sources */,
