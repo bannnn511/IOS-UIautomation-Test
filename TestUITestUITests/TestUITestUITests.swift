@@ -179,11 +179,12 @@ class TestUITestUITests: XCTestCase {
     func testWaitingForAnElementToAppear() {
         runCorrectInput()
         app.staticTexts["View Schedule"].tap()
-        XCTAssert(app.buttons["Load More games"].exists)
-        app.buttons["Load More Games"].tap()
-        
-        let nextGameLabel = self.app.staticTexts["Game 4 - Tomorrow"]
-        XCTAssert(nextGameLabel.waitForExistence(timeout: 5))
+        //app.scrollViews.element.swipeUp()
+        XCTAssertFalse(app.buttons["Load More Games"].isHittable)
+//        app.buttons["Load More Games"].tap()
+//
+//        let nextGameLabel = self.app.staticTexts["Game 4 - Tomorrow"]
+//        XCTAssert(nextGameLabel.waitForExistence(timeout: 5))
     }
     
     func testScrollWaitingForAnElementToAppear() {
@@ -193,12 +194,18 @@ class TestUITestUITests: XCTestCase {
         app.scrollViews.element.swipeUp()
         app.scrollViews.otherElements/*@START_MENU_TOKEN@*/.staticTexts["Load More Games"]/*[[".buttons[\"Load More Games\"].staticTexts[\"Load More Games\"]",".staticTexts[\"Load More Games\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         
+         app.buttons["Load More Games"].tap()
+        
+        let nextGameLabel = self.app.staticTexts["Game 4 - Tomorrow"]
+        XCTAssert(nextGameLabel.waitForExistence(timeout: 5))
+        
     }
     
     func testDismissingAnAlert() {
         runCorrectInput()
         app.staticTexts["View Schedule"].tap()
         
+        XCTAssertTrue(app.buttons["Finish Game"].isHittable)
         app.buttons["Finish Game"].tap()
         app.alerts["You won!"].buttons["Awesome!"].tap()
     }
