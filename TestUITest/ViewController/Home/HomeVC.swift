@@ -15,7 +15,7 @@ class HomeVC: UIViewController {
     var moreInfoBtn = UIButton()
     var tableView = UITableView()
     
-    var arr:[String] = ["Manage Team", "Manage Roster", "View Schedule"]
+    var arr:[String] = ["Manage Team", "View Schedule"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,8 +97,6 @@ extension HomeVC: UITableViewDelegate {
             let controller = ManageTeamVC()
             self.navigationController?.pushViewController(controller, animated: true)
         case 1:
-            return
-        case 2:
             let controller = ScheduleViewController()
             self.navigationController?.pushViewController(controller, animated: true)
         default:
