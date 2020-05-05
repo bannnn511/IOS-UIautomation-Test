@@ -22,6 +22,8 @@ class ScheduleViewController: UIViewController {
     private var statusGame2 = UILabel()
     private var finishBtn = UIButton()
     private var loadMoreBtn = UIButton()
+    private var scrollView = UIScrollView()
+    private var containView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,15 +40,26 @@ extension ScheduleViewController {
         view.backgroundColor = .white
         navigationItem.title = "Schedule"
         
-        view.addSubview(game1Label)
+        view.addSubview(scrollView)
+        scrollView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        
+        scrollView.addSubview(containView)
+        containView.snp.makeConstraints { (make) in
+            make.top.bottom.equalToSuperview()
+            make.left.right.equalTo(view)
+        }
+        
+        containView.addSubview(game1Label)
         game1Label.text = "Game 1 - 25-22"
         game1Label.textColor = .black
         game1Label.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(100)
+            make.top.equalToSuperview().offset(20)
             make.left.equalToSuperview().offset(22)
         }
         
-        view.addSubview(game2Label)
+        containView.addSubview(game2Label)
         game2Label.textColor = .black
         game2Label.text = "Game 2 - 26-24"
         game2Label.snp.makeConstraints { (make) in
@@ -54,7 +67,7 @@ extension ScheduleViewController {
             make.left.equalToSuperview().offset(22)
         }
         
-        view.addSubview(game3Label)
+        containView.addSubview(game3Label)
         game3Label.textColor = .black
         game3Label.text = "Game 3 - 27-25"
         game3Label.snp.makeConstraints { (make) in
@@ -62,14 +75,14 @@ extension ScheduleViewController {
             make.left.equalToSuperview().offset(22)
         }
         
-        view.addSubview(nextGameLabel)
+        containView.addSubview(nextGameLabel)
         nextGameLabel.textColor = .black
         nextGameLabel.snp.makeConstraints { (make) in
             make.top.equalTo(game3Label.snp.bottom).offset(8)
             make.left.equalToSuperview().offset(22)
         }
         
-        view.addSubview(statusGame1)
+        containView.addSubview(statusGame1)
         statusGame1.text = "Loss"
         statusGame1.textColor = .black
         statusGame1.snp.makeConstraints { (make) in
@@ -77,7 +90,7 @@ extension ScheduleViewController {
             make.right.equalToSuperview().inset(22)
         }
         
-        view.addSubview(statusGame2)
+        containView.addSubview(statusGame2)
         statusGame2.text = "Win"
         statusGame2.textColor = .black
         statusGame2.snp.makeConstraints { (make) in
@@ -85,7 +98,7 @@ extension ScheduleViewController {
             make.right.equalToSuperview().inset(22)
         }
         
-        view.addSubview(finishBtn)
+        containView.addSubview(finishBtn)
         finishBtn.setTitle("Finish Game", for: .normal)
         finishBtn.setTitleColor(.systemBlue, for: .normal)
         finishBtn.addTarget(self, action: #selector(finishGameBtnOnClick(_:)), for: .touchUpInside)
@@ -96,13 +109,14 @@ extension ScheduleViewController {
             make.width.equalTo(100)
         }
         
-        view.addSubview(loadMoreBtn)
+        containView.addSubview(loadMoreBtn)
         loadMoreBtn.setTitle("Load More Games", for: .normal)
         loadMoreBtn.setTitleColor(.systemBlue, for: .normal)
         loadMoreBtn.addTarget(self, action: #selector(loadMoreBtnOnClick(_:)), for: .touchUpInside)
         loadMoreBtn.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            make.top.equalTo(game3Label.snp.bottom).offset(32)
+            make.top.equalTo(game3Label.snp.bottom).offset(1002)
+            make.bottom.equalToSuperview()
         }
     }
     

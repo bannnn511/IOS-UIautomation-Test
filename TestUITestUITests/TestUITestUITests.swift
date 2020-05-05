@@ -179,10 +179,20 @@ class TestUITestUITests: XCTestCase {
     func testWaitingForAnElementToAppear() {
         runCorrectInput()
         app.staticTexts["View Schedule"].tap()
+        XCTAssert(app.buttons["Load More games"].exists)
         app.buttons["Load More Games"].tap()
         
         let nextGameLabel = self.app.staticTexts["Game 4 - Tomorrow"]
         XCTAssert(nextGameLabel.waitForExistence(timeout: 5))
+    }
+    
+    func testScrollWaitingForAnElementToAppear() {
+        runCorrectInput()
+      
+        app/*@START_MENU_TOKEN@*/.tables.staticTexts["View Schedule"]/*[[".otherElements[\"HomeVC\"].tables",".cells.staticTexts[\"View Schedule\"]",".staticTexts[\"View Schedule\"]",".tables"],[[[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/.tap()
+        app.scrollViews.element.swipeUp()
+        app.scrollViews.otherElements/*@START_MENU_TOKEN@*/.staticTexts["Load More Games"]/*[[".buttons[\"Load More Games\"].staticTexts[\"Load More Games\"]",".staticTexts[\"Load More Games\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
     }
     
     func testDismissingAnAlert() {
