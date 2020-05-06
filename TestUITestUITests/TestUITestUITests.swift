@@ -24,9 +24,10 @@ class TestUITestUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testCorrectInput() {
+    func testCorrectInput_ExpectedMoveToHomeVC() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        //let usernameTf = app.textFields["UserName"]
         let usernameTf = app.textFields.element(boundBy: 0)
         usernameTf.tap()
         usernameTf.typeText("Khai2504")
@@ -41,7 +42,7 @@ class TestUITestUITests: XCTestCase {
         XCTAssertTrue(homeView.exists)
         
     }
-    
+     
     func runCorrectInput() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -55,12 +56,12 @@ class TestUITestUITests: XCTestCase {
         
         app.buttons["LogIn"].tap()
         
-        //           let homeView = app.otherElements["HomeVC"]
-        //           XCTAssertTrue(homeView.exists)
-        
+//                   let homeView = app.otherElements["HomeVC"]
+//                   XCTAssertTrue(homeView.exists)
+//
     }
     
-    func testEmptyInput() {
+    func testEmptyInput_ExpectedDisplayErrorAlert() {
         app.buttons["LogIn"].tap()
         
         let alert = app.alerts["Error"]
@@ -71,8 +72,7 @@ class TestUITestUITests: XCTestCase {
         
     }
     
-    func testEmptyPass() {
-        
+    func testEmptyPass_ExpectedDisplayErrorAlert() {
         
         let usernameTf = app.textFields.element(boundBy: 0)
         usernameTf.tap()
@@ -87,8 +87,7 @@ class TestUITestUITests: XCTestCase {
         
     }
     
-    func testEmptyUserName() {
-        
+    func testEmptyUserName_ExpectedDisplayErrorAlert() {
         
         let usernameTf = app.textFields.element(boundBy: 1)
         usernameTf.tap()
@@ -103,12 +102,10 @@ class TestUITestUITests: XCTestCase {
         
     }
     
-    func testWrongUserName() {
-        
-        
+    func testWrongUserName_ExpectedDisplayErrorAlert() {
         let usernameTf = app.textFields.element(boundBy: 0)
         usernameTf.tap()
-        usernameTf.typeText("khaikhaikhai123456")
+        usernameTf.typeText("Khai25042504")
         
         let passTf = app.textFields.element(boundBy: 1)
         passTf.tap()
@@ -123,24 +120,16 @@ class TestUITestUITests: XCTestCase {
         alert.buttons["OK"].tap()
     }
     
-    func testAdjustingASlider() {
+    func testAdjustingASlider_ExpectedSliderValueLabelShowCorrectValue() {
         
-        let usernameTf = app.textFields.element(boundBy: 0)
-        usernameTf.tap()
-        usernameTf.typeText("Khai2504")
-        
-        let passTf = app.textFields.element(boundBy: 1)
-        passTf.tap()
-        passTf.typeText("123")
-        
-        app.buttons["LogIn"].tap()
+        runCorrectInput()
         app.staticTexts["Manage Team"].tap()
         
         app.sliders.element.adjust(toNormalizedSliderPosition: 0.7)
         XCTAssert(app.staticTexts["7"].exists)
     }
     
-    func testTextExistsInAWebView() {
+    func testTextExistsInAWebView_ExpectedShowWebview() {
         
         runCorrectInput()
         app.buttons["More info"].tap()
@@ -148,7 +137,7 @@ class TestUITestUITests: XCTestCase {
         XCTAssert(volleyballLabel.waitForExistence(timeout: 5))
     }
     
-    func testTappingALinkInAWebView() {
+    func testTappingALinkInAWebView_ExpectedCanClickToTheLinkInWebview() {
         
         runCorrectInput()
         app.buttons["More info"].tap()
@@ -162,13 +151,13 @@ class TestUITestUITests: XCTestCase {
         XCTAssert(volleyballLink.waitForExistence(timeout: 5))
     }
     
-    func testPushingAController() {
+    func testPushingAController_ExpectedShowWebview() {
         runCorrectInput()
         app.buttons["More info"].tap()
         XCTAssert(app.navigationBars["Volleyball?"].exists)
     }
     
-    func testPoppingAViewController() {
+    func testPoppingAViewController_ExpectedBackToPreviousViewWhenPressBackButon() {
         runCorrectInput()
         app.buttons["More info"].tap()
         XCTAssert(app.navigationBars["Volleyball?"].exists)
@@ -176,7 +165,7 @@ class TestUITestUITests: XCTestCase {
         XCTAssert(app.navigationBars["Test"].exists)
     }
     
-    func testWaitingForAnElementToAppear() {
+    func testWaitingForAnElementToAppear_Expected() {
         runCorrectInput()
         app.staticTexts["View Schedule"].tap()
         //app.scrollViews.element.swipeUp()
@@ -187,21 +176,21 @@ class TestUITestUITests: XCTestCase {
 //        XCTAssert(nextGameLabel.waitForExistence(timeout: 5))
     }
     
-    func testScrollWaitingForAnElementToAppear() {
+    func testScrollWaitingForAnElementToAppear_ExpectedDisplayNewLabelWhenClickLoadMoreButton() {
         runCorrectInput()
       
         app/*@START_MENU_TOKEN@*/.tables.staticTexts["View Schedule"]/*[[".otherElements[\"HomeVC\"].tables",".cells.staticTexts[\"View Schedule\"]",".staticTexts[\"View Schedule\"]",".tables"],[[[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/.tap()
         app.scrollViews.element.swipeUp()
         app.scrollViews.otherElements/*@START_MENU_TOKEN@*/.staticTexts["Load More Games"]/*[[".buttons[\"Load More Games\"].staticTexts[\"Load More Games\"]",".staticTexts[\"Load More Games\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         
-         app.buttons["Load More Games"].tap()
+         //app.buttons["Load More Games"].tap()
         
         let nextGameLabel = self.app.staticTexts["Game 4 - Tomorrow"]
         XCTAssert(nextGameLabel.waitForExistence(timeout: 5))
         
     }
     
-    func testDismissingAnAlert() {
+    func testDismissingAnAlert_ExpectedDisplayAlertAndDimissAlertWhenClickButton() {
         runCorrectInput()
         app.staticTexts["View Schedule"].tap()
         
@@ -210,7 +199,7 @@ class TestUITestUITests: XCTestCase {
         app.alerts["You won!"].buttons["Awesome!"].tap()
     }
     
-    func testAdjustingAPicker() {
+    func testAdjustingAPicker_ExpectedFormationLabelMatchWithTheValueInPicker() {
         runCorrectInput()
         app.staticTexts["Manage Team"].tap()
         
@@ -228,7 +217,7 @@ class TestUITestUITests: XCTestCase {
         XCTAssert(selectedFormationLabel.exists)
     }
     
-    func testTypingText() {
+    func testTypingText_ExpectedDisplayTextInTextfield() {
         runCorrectInput()
         app.staticTexts["Manage Team"].tap()
         
